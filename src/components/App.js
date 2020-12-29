@@ -1,10 +1,16 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import { ThemeProvider } from '@material-ui/core/styles';
+
+import theme from './ui/Theme';
+import Header from '../components/ui/Header';
 
 function App() {
-  return <div>
-    <Button variant="contained">Click Me!</Button>
-  </div>;
+  return (
+    <ThemeProvider theme={theme}>
+      <Header />
+      Hello...
+    </ThemeProvider>
+  )
 }
 
 export default App;
