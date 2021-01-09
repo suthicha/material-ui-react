@@ -1,24 +1,27 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme } from "@material-ui/core/styles";
 
-const aekeBlue = '#0B72B9';
-const aekeOrange = '#FFBA60';
+const aekeBlue = "#0B72B9";
+const aekeOrange = "#FFBA60";
 
 export default createMuiTheme({
-    palette: {
-        common: {
-            blue: `${aekeBlue}`,
-            orange: `${aekeOrange}`,
-        },
-        primary: {
-            main: `${aekeBlue}`
-        },
-        secondary: {
-            main: `${aekeOrange}`
-        }
+  palette: {
+    common: {
+      blue: `${aekeBlue}`,
+      orange: `${aekeOrange}`,
     },
-    typography: {
-        h3: {
-            fontWeight: 300
-        }
-    }
-})
+    primary: {
+      main: `${aekeBlue}`,
+    },
+    secondary: {
+      main: `${aekeOrange}`,
+    },
+  },
+  typography: {
+    tab: {
+      fontFamily: "Raleway",
+      fontWeight: "400",
+      fontSize: "1rem",
+      textTransform: "none",
+    },
+  },
+});
