@@ -15,5 +15,10 @@ export default createMuiTheme({
         secondary: {
             main: `${aekeOrange}`
         }
+    },
+    typography: {
+        h3: {
+            fontWeight: 300
+        }
     }
 })

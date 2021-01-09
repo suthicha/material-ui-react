@@ -1,13 +1,12 @@
 import React from  'react';
 import AppBar from '@material-ui/core/AppBar';
 import ToolBar from '@material-ui/core/ToolBar';
+import Typography from '@material-ui/core/Typography';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
 function ElevationScroll(props) {
     const { children, window } = props;
-    // Note that you normally won't need to set the window ref as useScrollTrigger
-    // will default to window.
-    // This is only being set here because the demo is in an iframe.
+
     const trigger = useScrollTrigger({
       disableHysteresis: true,
       threshold: 0,
@@ -23,7 +22,11 @@ export default function Header(props) {
     return (
         <ElevationScroll>
             <AppBar position="fixed" color="primary">
-                <ToolBar>AekeLab Development</ToolBar>
+                <ToolBar>
+                  <Typography variant="h3">
+                    AekeLab Development
+                  </Typography>
+                </ToolBar>
             </AppBar>
         </ElevationScroll>
     );
